@@ -200,41 +200,32 @@ img {
     border-radius: 8px;
 }
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/heroMerch.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
+.hero-container {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
 }
 
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+.hero-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
+.hero-title {
+    text-align: left;
+    color: white;
+    margin: 40px 0 20px;
 }
 
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
+.hero-title h1 {
+    font-size: 48px;
+    margin: 0;
+    color: pink;
+}
+
+.hero-title p{
+    font-size: 18px;
+    margin-top: 10px;
+
 }
