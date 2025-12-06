@@ -7,6 +7,12 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/normalize.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kedebideri:wght@400;500;600;700;800;900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -22,6 +28,63 @@
             <li><a href="Tickets.html">Tickets</a></li>
         </ul>
     </nav>
+
+        <!-- Hero Image Section -->
+        <section class="ticket-hero">
+            <img src="images/blackpink_deadline.jpg" alt="Concert Tickets">
+            <div class="ticket-hero-text">
+                <h1>BLACKPINK Live in Concert</h1>
+                <p>Experience the ultimate show of the year!</p>
+            </div>
+        </section>
+
+        <!-- Ticket Info Box -->
+        <section class="ticket-info-container">
+            <div class="ticket-info">
+                <div class="ticket-details">
+                    <h2><strong>Deadline Concert</strong></h2>
+                    <p><strong>Date:</strong> 20th December 2025</p>
+                    <p><strong>Venue:</strong> Singapore Indoor Stadium</p>
+                    <p><strong>Time:</strong> 7:00 PM</p>
+                </div>
+                <div class="ticket-action">
+                    <a href="javascript:void(0)" class="btn-buy" onclick="openTicketPopup()">Buy Now</a>
+                    <p class="ticket-price">$150 SGD</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <h3><strong>Follow BLACKPINK</strong></h3>
+
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/blackpinkofficial" target="_blank">
+                        <i class="fa-brands fa-instagram social-link"></i></a></li>
+
+                <li><a href="https://twitter.com/BLACKPINK" target="_blank">
+                        <i class="fa-brands fa-twitter social-link"></i></a></li>
+
+                <li><a href="https://www.youtube.com/BLACKPINK" target="_blank">
+                        <i class="fa-brands fa-youtube social-link"></i></a></li>
+            </ul>
+
+            <p>&copy; 2025 BLACKPINK official</p>
+        </footer>
+
+        <div id="ticketPopup" class="popup-overlay">
+            <div class="popup-box">
+                <h2>Purchase Ticket</h2>
+
+                <input type="text" id="ticketName" placeholder="Your Name">
+                <input type="email" id="ticketEmail" placeholder="Email Address">
+                <input type="text" id="ticketCard" placeholder="Card Number">
+
+                <button id="confirmTicketBtn">Purchase</button>
+                <button id="closeTicketBtn">Close</button>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
 
     </body>
 </html>

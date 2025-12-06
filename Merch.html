@@ -7,9 +7,14 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="css/normalize.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kedebideri:wght@400;500;600;700;800;900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
 </head>
 
-<body>
+<body class="merch-page">
     <div id="header">
         <img src="images/logo.png" alt="BlackPink Logo" id="logo">
     </div>
@@ -28,8 +33,8 @@
     </div>
 
     <section class="hero-title">
-    <h1>Merch</h1>
-    <p>Shop the latest collection</p>
+    <h1><strong>Merch</strong></h1>
+    <p><strong>Shop the latest collection!</strong></p>
     </section>
 
     <section class="container">
@@ -38,8 +43,8 @@
                 <img src="images/product1.png">
             </div>
             <div class="flex-info">
-                <h4>Blackpink Shirt</h4>
-                <h3>$50</h3>
+                <h4 onclick="openPurchasePopup()">Blackpink [Jump] Shirt</h4>
+                <h3>$60.00 SGD</h3>
             </div>
         </div>
         <div class="flex-item">
@@ -47,8 +52,8 @@
                 <img src="images/product2.png">
             </div>
             <div class="flex-info">
-                <h4>Blackpink hoodie</h4>
-                <h3>$50</h3>
+                <h4 onclick="openPurchasePopup()">Blackpink- Pink Venom hoodie</h4>
+                <h3>$73.00 SGD</h3>
             </div>
         </div>
         <div class="flex-item">
@@ -56,8 +61,8 @@
                 <img src="images/product3.png">
             </div>
             <div class="flex-info">
-                <h4>Blackpink Shoes</h4>
-                <h3>$50</h3>
+                <h4 onclick="openPurchasePopup()">Blackpink Shoes- JENNIE 96</h4>
+                <h3>$269.00 SGD</h3>
             </div>
         </div>
         <div class="flex-item">
@@ -65,11 +70,81 @@
                 <img src="images/product4.png">
             </div>
             <div class="flex-info">
-                <h4>Blackpink Pants</h4>
-                <h3>$50</h3>
+                <h4 onclick="openPurchasePopup()">Blackpink Sleep Pajama Pants</h4>
+                <h3>$115.00 SGD</h3>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="flex-img">
+                <img src="images/product5.webp">
+            </div>
+            <div class="flex-info">
+                <h4 onclick="openPurchasePopup()">Blackpink World Tour Tee Black</h4>
+                <h3>$60.00 SGD</h3>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="flex-img">
+                <img src="images/product6.webp">
+            </div>
+            <div class="flex-info">
+                <h4 onclick="openPurchasePopup()">Blackpink- Track Shorts Black</h4>
+                <h3>$86.00 SGD</h3>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="flex-img">
+                <img src="images/product7.webp">
+            </div>
+            <div class="flex-info">
+                <h4 onclick="openPurchasePopup()">Blackpink- Basketball Jersey White</h4>
+                <h3>$165.00 SGD</h3>
+            </div>
+        </div>
+        <div class="flex-item">
+            <div class="flex-img">
+                <img src="images/product8.webp">
+            </div>
+            <div class="flex-info">
+                <h4 onclick="openPurchasePopup()">Blackpink Character Tee_Black</h4>
+                <h3>$53.00 SGD</h3>
             </div>
         </div>
     </section>
+
+    
+
+    <footer class="site-footer">
+        <h3><strong>Follow BLACKPINK</strong></h3>
+
+        <ul class="socials">
+            <li><a href="https://www.instagram.com/blackpinkofficial" target="_blank">
+                    <i class="fa-brands fa-instagram social-link"></i></a></li>
+
+            <li><a href="https://twitter.com/BLACKPINK" target="_blank">
+                    <i class="fa-brands fa-twitter social-link"></i></a></li>
+
+            <li><a href="https://www.youtube.com/BLACKPINK" target="_blank">
+                    <i class="fa-brands fa-youtube social-link"></i></a></li>
+        </ul>
+
+        <p>&copy; 2025 BLACKPINK official</p>
+    </footer>
+
+    <div id="purchasePopup" class="popup-overlay">
+        <div class="popup-box">
+            <h2>Purchase Form</h2>
+
+            <input type="text" id="userName" placeholder="Your Name">
+            <input type="email" id="userEmail" placeholder="Email Address">
+            <input type="text" id="userCard" placeholder="Card Number">
+
+            <button id="confirmPurchaseBtn">Purchase</button>
+            <button id="closePopupBtn">Close</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 
 </body>
 
